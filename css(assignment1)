@@ -1,0 +1,132 @@
+###HTML
+'''html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple webpage with css selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>welcome to Zenin</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#contact" >Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>homepage</h2>
+            <p>Welcome to ZENIN.corp, where convenience meets quality. Discover a seamless shopping experience tailored just for you. Whether you're seeking the latest trends in fashion, innovative gadgets, or unique home decor, our curated selection offers something for every taste and occasion. With our hassle-free dropshipping model, enjoy the ease of ordering top-notch products directly to your doorstep. Join our community of savvy shoppers today and explore a world of endless possibilities, all at your fingertips. Start your journey with us and redefine the way you shop online.</p>
+            
+        </section>
+        <section id="about">
+            <h2>About us</h2>
+            <p>Welcome to Zenin.corp, your premier destination for effortless shopping and exceptional products. Founded with a passion for connecting customers with the latest trends and innovative goods, we strive to redefine convenience in online shopping through our curated selection and streamlined dropshipping process. Our mission is to provide a seamless experience where quality meets affordability, ensuring that every purchase meets your highest expectations. Whether you're upgrading your wardrobe, enhancing your home, or finding the perfect gift, we're dedicated to delivering top-notch products right to your doorstep. Join us at [Your Dropshipping Website Name] and discover a new way to shop online—one that's convenient, reliable, and always exciting.</p>
+        </section>
+        <section>
+            <h2>Contact us</h2>
+            <p>contact us on:
+               whatsapp:-+91 98****90*08
+               email-xyz@gmail.com
+               customer care- +91 98****90*08</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 zenin.corp.All rights reserved</p>
+    </footer>
+</body>
+</html>
+'''
+  ###
+###CSS
+'''
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Specific Selectors */
+#home {
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+#about {
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+#contact {
+    background-color: #f0f0f0;
+    padding: 15px
+}
+'''
