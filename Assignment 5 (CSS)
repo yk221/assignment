@@ -1,0 +1,142 @@
+'''HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edtech Flexbox example</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+            max-width: 250px;
+            height: min-content;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Mantra</h1>
+        <nav class="navbar">
+            <a href="">Home</a>
+            <a href="">Fashion</a>
+            <a href="">Beauty products</a>
+            <a href="">Footerwear</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="shirts">
+            <h2>Mens shirts</h2>
+            <img src="https://imgs.search.brave.com/oJzh3GLv_9wstMPdqgfrnZZ2dOFp9H7_TkuX3nIH7kI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzdhL2Uz/L2IyLzdhZTNiMjkx/NGY3OWZmYWM3ZmQ5/NzdjMjE3OTFhYzA1/LmpwZw" alt="Mens shirt image">
+        </section>
+        <section class="kurtis">
+            <h2>Womens kurtis</h2>
+            <img src="https://imgs.search.brave.com/Io-gqqY2JgN0YdwoO6zbokD2l8xkAnS4YZzWcRPU560/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZmL2Ix/L2E1LzZmYjFhNWM3/OWY4YmZhMDRiZWEw/MzRhNThkNTNlMjU2/LmpwZw" alt="Womens kurti image">
+        </section>
+        <section class="kidwear">
+            <h2>kidwear</h2>
+            <img src="https://imgs.search.brave.com/MvO6gnEt2UEvrHaXR1x5NciSTZgiafd3GYnui74RvI0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDk1/ODA4OTI4L3Bob3Rv/L3RoZS1raWQtcG9z/ZXMtaW4tYS1qYWNr/ZXQtb2YtdGhlLWJp/Zy1zaXplLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz16U0lJ/TXMzQzJRMEYtNGQ0/eWRaRVlIZzctaGto/V3JZRnV6bTNoU2NX/Q3E0PQ"  alt="kidwear image">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mantra. All rights reserved</p>
+    </footer>
+</body>
+</html>
+''''
+
+'''CSS
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color:black ;
+    color: #7d0dad;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 10px;
+}   
+.navbar a {
+    color: rgb(25, 24, 24);
+    padding: 10px 20px;
+    background-color: #7d0dad;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .navbar a:hover {
+    background-color: #e7e4e9;
+  }
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+
+.shirts{
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.kurtis{
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.kidwear{
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.footer {
+    background-color: black;
+    color:#7d0dad ;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+'''''
