@@ -1,0 +1,95 @@
+'''HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS boxmodel example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1> WELCOME TO TECH FUNDA</h1>
+        <h3>learn high income skills with fun</h3>
+    </header>
+
+    <main>
+        <section class="course-list">
+            <div class="course">
+                <h2>course 1</h2>
+                <p>Digital Marketing</p>
+                <p>Digital marketing encompasses various strategies and techniques used to promote products or services using digital channels, primarily on the internet, but also including mobile phones, display advertising, and other digital mediums. It's a broad field that includes a range of disciplines and tactics to reach and engage with potential customers online.</p>
+            </div>
+            <div class="course">
+                <h2>Course 2</h2>
+                <p>video Editing</p>
+                <p>Video editing is the process of manipulating and arranging video footage, audio, and effects to create a cohesive and visually appealing final product. It's a crucial part of the post-production phase in filmmaking, broadcasting, and online content creation.</p>
+            </div>
+            <div class="course">
+                <h2>Course 3</h2>
+                <p>python programming</p>
+                <p>Python is a high-level, interpreted programming language known for its simplicity and readability. Here's a brief overview of Python programming:
+
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy;2024 Tech Funda. All rights reserved</p>
+    </footer>
+
+'''
+'''CSS
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    line-height: 1.8;
+    list-style: none;
+}
+.header{
+    background-color: rgb(152, 236, 41);
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+.course-list{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:whitesmoke;
+}
+.course{
+    background-color: whitesmoke;
+    border: 1px solid#333;
+    padding: 20px;
+    margin:10px;
+    width:300px;
+    border-radius: 5px;
+}
+.course h2{
+    margin-bottom: 10px;
+    color: black;
+}
+.footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.course1 {
+    background-color: antiquewhite;
+
+}
+'''
+
+    
+</body>
+</html>
+'''
+'''
