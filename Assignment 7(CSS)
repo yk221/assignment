@@ -1,0 +1,121 @@
+'''
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        img{
+           max-width: 50%;
+           height: auto; 
+           border-radius: 10px;
+           box-shadow: inset;
+           align-content: first baseline;
+        }
+    </style>
+    <div class="grid-container">
+        <div class="header">
+            <h1>Welcome</h1>
+            <h2>to our shopping platform</h2>
+        </div>
+        <div class="sidebar">
+            <h2>Home</h2>
+            <h2>Explore</h2>
+            <h2>About</h2>
+            <h2>Contact Us</h2>
+        </div>
+        <div class="main">
+            <h2>Anime Hoodies</h2>
+            <img src="https://imgs.search.brave.com/SbZG4kT3BwSw4ByZn0shYO-6G_-XSKomCSiYHmTZcLE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzI3NTcxMDE3L3Iv/aWwvNzYwNjJlLzUw/NjA2MzAyODUvaWxf/NjAweDYwMC41MDYw/NjMwMjg1X3oxaDQu/anBn" alt="Anime image">
+            <p>About this item
+                FIT TYPE: Oversized Fit; 
+                Main material: 100% Cotton , 180GSM (Bio-Washed & Pre-Shrunk for Minimum shrinkage).
+                HIGH DEFINITION PRINT: We are using the High Quality Print Technology to ensure our products with sharp cuts and durable for long time.
+                WASH CARE: Machine Wash Cold, Tumble dry low, Do Not Bleach. Check our size chart to get your best fit.
+                Sleeve type: Half Sleeve;
+                Neck Type: Round Neck; 
+                Fitting type: Oversized Fit;
+                Age Range Description: Adult;
+                Occasion: Casual.
+                Actual Products color may vary with product due to monitor settings.
+                </p>
+        </div>
+        <div class="footer">
+            <p>@copy;2024 All rights reserved.</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+
+''''
+
+'''CSS
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  'header header header'
+  'sidebar main main'
+  'sidebar main main'
+  'footer footer footer';
+  grid-template-rows: auto;
+}
+.grid-container> div{
+  padding: 20px;
+  border: 1px solid#ddd;
+  text-align: center;
+
+}
+.header{
+  grid-area: header;
+  background-color: blueviolet;
+  text-align: center;
+  padding: 20px;
+  color: antiquewhite;
+}
+.sidebar{
+  grid-area: sidebar;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+}
+.main{
+  grid-area: main;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+.footer{
+  grid-area: footer;
+  background-color: black;
+  color: antiquewhite;
+  text-align: center;
+  position: bottom;
+}
+
+'''
