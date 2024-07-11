@@ -1,0 +1,218 @@
+'''HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance grid layout example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">Welcome to our website</header>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">My Cart</a>
+        <a href="#">Profile</a>
+
+    </nav>
+    <main class="main-content">
+        <section class="fashion">
+            <h2>Fashion</h2>
+            <p>A fashion design brief is a document that outlines the vision, objectives, and requirements for a particular design project. It serves as a guiding blueprint, facilitating effective communication between designers, clients, and stakeholders. A well-crafted design brief is essential in the fashion industry, providing a comprehensive outline of a project’s objectives, requirements, and creative direction.</p>
+            <img class="fashionimg" srcset="https://imgs.search.brave.com/g0cN66nNU4d0lyzhpmhgvoGs7OHW-J9LY84jxCJoi6E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzA3Lzhl/LzA2LzA3OGUwNjg0/YjIwYjZjY2M3NzYz/ZjYyZmNjZTFkYjk3/LmpwZw" alt="fashionimg">
+        </section>
+        <section class="cosmetics">
+            <h2>Cosmetics</h2>
+            <p>Cosmetics are natural or synthetic toiletry products used to maintain hygiene and enhance appearance. </p>
+            <img class="cosmeticsimg" srcset="https://imgs.search.brave.com/_azpBi3QbPCU1Sxko7QBaQA-bQwJfst84mn8znK6MWo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjkx/NTcyOTc1L3Bob3Rv/L2Nvc21ldGljcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/Wlc2SnpYYXM3RGlu/WkV6LTd5RDZSMlNW/LTlsWlZUMjNEVWxL/RnNwcExFdz0" alt="cosmeticsimg">
+        </section>
+        <section class="fitness">
+            <h2>Fitness</h2>
+            <p>Fitness equipment has a rich history, dating back to ancient times when people used stones, logs, and other natural objects to challenge themselves physically. Over the years, fitness equipment has evolved to include a wide range of devices and tools designed to improve physical fitness, strength, and overall well-being.</p>
+            <img class="fitnessimg" srcset="https://imgs.search.brave.com/g-WvRDoYX53_fdIvdYKNuPRD7ol0Xj_9HJoYCAz5Mis/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jaGVj/a291dC5vdmVyc3Rv/Y2suY29tL2Nkbi9z/aG9wL2NvbGxlY3Rp/b25zL1Nvb3ppZXIt/MjRsYnMtUnViYmVy/LUR1bWJiZWxscy1X/ZWlnaHQtU2V0LTEy/bGJzLVNpbmdsZS1E/dW1iYmVsbC1IYW5k/LVdlaWdodC1CYXJi/ZWxsLWZvci1Cb2R5/LUZpdG5lc3MtVHJh/aW5pbmdfMkMtQmxh/Y2suanBnP3Y9MTcx/MDk1MTI5MiZ3aWR0/aD05NTA" alt="fitnessimg">
+        </section>
+        <section class="furniture">
+            <h2>Furniture</h2>
+            <p>Furniture refers to movable objects that are used to make a space suitable for living or working. It includes a wide range of items such as tables, chairs, beds, desks, dressers, and cupboards. These objects are designed to provide functionality, comfort, and aesthetic appeal to a space.</p>
+            <img class="furnitureimg"  srcset="https://imgs.search.brave.com/lp7h9w0w_yiH3NW9KTSf9Xxwsg6Li8L7EnzeaDjFM5g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9ueWZ1/cm5pdHVyZS5jb20v/Y2RuL3Nob3AvZmls/ZXMvYmF4dGVyLWJl/aWdlLTAxLmpwZz92/PTE3MTIxNjU5NDk"  alt="furnitureimg">
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy;2024.Allrights reserved.
+    </footer>
+    
+</body>
+</html>
+
+'''
+
+'''CSS
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  color: black;
+  line-height: 2;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "header header "
+  "nav main"
+  "nav sidebar"
+  "footer footer";
+  height: 100vh;
+  gap: 20px;
+}
+.header{
+  grid-area: header;
+  background-color:rgb(207, 39, 39);
+  color: rgb(228, 224, 224);
+  padding: 20px;
+  text-align: center;
+  text-size-adjust:54px;
+  position: static;
+}
+.navbar{
+  grid-area: nav;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.navbar a{
+  color: black;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  background-color: azure;
+  border-radius: 10px;
+  text-align: center;
+  position: static;
+}
+.navbar a:hover{
+  background-color: bisque;
+  transition: 0.3ms;
+  transition-duration: initial;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main-content{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(400px,400px));
+  gap: 20px;
+  padding: 20px;
+  z-index:100px; 
+}
+.fashion{
+  background-color: bisque;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  position: sticky; 
+  transition-duration: inherit; 
+  transition-delay: 0.1s;
+}
+.fashion:hover{
+  transition: 0.3s;
+  background-color: rgb(113, 114, 114);
+}
+.cosmetics{
+  background-color: bisque;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  position: sticky;
+  transition-duration: inherit; 
+  transition-delay: 0.1s;
+}
+.cosmetics:hover{
+  transition: 0.3s;
+  background-color: rgb(113, 114, 114);
+}
+.furniture{
+  background-color: bisque;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  position:sticky;
+  transition-duration: inherit;
+  transition-delay: 0.1s; 
+}
+.furniture:hover{
+  transition: 0.3s;
+  background-color: rgb(113, 114, 114);
+}
+.fitness{
+  background-color: bisque;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  position: sticky;
+  transition-duration: inherit;
+  transition-delay: 0.1s; 
+}
+.fitness:hover{
+  transition: 0.3s;
+  background-color: rgb(113, 114, 114);
+}
+.footer{
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: static;
+}
+
+@media(max-width:768px ){
+    .grid-container{
+      grid-template-areas: 
+      'header'
+      'navbar'
+      'main-content'
+      'fashion'
+      'cosmetics'
+      'furniture'
+      'fitness'
+      'footer';
+    }
+}
+@media(max-height:1080px ){
+  .grid-container{
+    grid-template-areas: 
+    'header'
+    'navbar'
+    'main-content'
+    'fashion'
+    'cosmetics'
+    'furniture'
+    'fitness'
+    'footer';
+  }
+}
+.cosmeticsimg{
+  max-width: 350px;
+  height: fit-content;
+}
+  
+.fitnessimg{
+  max-width: 300px;
+  height: auto;
+}
+.furnitureimg{
+  max-width: 300px;
+  height: auto;
+}
+
+
+'''
